@@ -5,22 +5,20 @@ import posts from '../data/post.js'
 export default function AppMain() {
 
     const published = posts.filter(post => post.published)
-    const tagJs = posts.
-
-        return(
+    return (
 
 
-            <main>
-                <div className="container-main">
+        <main>
+            <div className="container-main">
 
-                    {published.map(post => <PostCard key={post.id} data={post} />)}
+                {published.map(post => <PostCard key={post.id} data={post} />)}
 
-                </div>
+            </div>
 
 
 
 
 
-            </main >
-        )
+        </main >
+    )
 }

@@ -3,6 +3,9 @@ import Button from '../button/button.jsx'
 
 
 export default function PostCard({ data }) {
+    const tags = data.tags.join(" ")
+
+
 
     return (
 
@@ -14,8 +17,18 @@ export default function PostCard({ data }) {
                 <div className={style.description}>
                     {data.content}
                 </div>
-                <div className="tag">{data.tags[0]}</div>
-                <div className="tag">{data.tags[1]}</div>
+                <div className={style.tagSpace}>
+                    {tags.includes("html") && (
+                        <div className={style.html}>{tags}</div>
+                    )}
+                    {tags.includes("css") && (
+                        <div className={style.css}>{tags}</div>
+                    )}
+                    {tags.includes("js") && (
+                        <div className={style.js}>{tags}</div>
+                    )}
+                </div>
+
 
 
                 <Button />
