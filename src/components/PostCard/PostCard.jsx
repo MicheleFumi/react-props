@@ -5,6 +5,10 @@ import Button from '../button/button.jsx'
 export default function PostCard({ data }) {
     const tags = data.tags.join(" ")
 
+    console.log(tags);
+    console.log(data);
+
+
 
 
     return (
@@ -18,15 +22,7 @@ export default function PostCard({ data }) {
                     {data.content}
                 </div>
                 <div className={style.tagSpace}>
-                    {tags.includes("html") && (
-                        <div className={style.html}>{tags}</div>
-                    )}
-                    {tags.includes("css") && (
-                        <div className={style.css}>{tags}</div>
-                    )}
-                    {tags.includes("js") && (
-                        <div className={style.js}>{tags}</div>
-                    )}
+                    {data.tags.map(tag => <span className={style[tag]}>{tag}</span>)}
                 </div>
 
 
