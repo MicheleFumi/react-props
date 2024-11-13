@@ -22,7 +22,7 @@ export default function PostCard({ data }) {
                     {data.content}
                 </div>
                 <div className={style.tagSpace}>
-                    {data.tags.map(tag => <span className={style[tag]}>{tag}</span>)}
+                    {data.tags.map((tag, index) => <span key={index} className={style[tag]}>{tag}</span>)}
                 </div>
 
 
