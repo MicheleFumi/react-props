@@ -8,6 +8,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 main {
 
   padding-bottom: 5rem;
