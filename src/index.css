@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+main,
+header {
+  background-color: rgb(173, 169, 169);
+}
+
+
+header {
+  h1 {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+.container-main {
+  width: 30%;
+  margin: auto;
+
+}
+
+footer {
+  background-color: rgb(41, 40, 40);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}

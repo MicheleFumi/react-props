@@ -1,0 +1,27 @@
+.blogCard {
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 1px 0px 10px 0px rgb(73, 73, 73);
+    margin-bottom: 2rem;
+
+    img {
+        text-align: center;
+        background-color: lightgray;
+        margin: auto;
+        margin: 0;
+        object-fit: cover;
+
+    }
+}
+
+
+
+.blogDescription {
+    background-color: white;
+    margin-top: -.25rem;
+    padding: 1rem 1rem;
+
+    .description {
+        padding: 1rem 0;
+    }
+}

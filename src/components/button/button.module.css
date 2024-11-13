@@ -1,0 +1,15 @@
+.btn {
+    text-decoration: none;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: orange;
+    color: white;
+    margin-top: 1rem;
+
+    &:hover {
+        background-color: #c27f03;
+        color: white;
+    }
+
+}
