@@ -3,13 +3,6 @@ import Button from '../button/button.jsx'
 
 
 export default function PostCard({ data }) {
-    const tags = data.tags.join(" ")
-
-    console.log(tags);
-    console.log(data);
-
-
-
 
     return (
 
